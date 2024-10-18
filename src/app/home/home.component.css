@@ -1,0 +1,51 @@
+.typing-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.typing {
+  width: 280px;
+  overflow: hidden;
+
+  border-right: 2px solid #353a57;
+  animation: typing 2s steps(12, end), cursor 1s steps(12, end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 280px;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.hover-underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFB4A2; /* Color salmon similar a tus botones */
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
