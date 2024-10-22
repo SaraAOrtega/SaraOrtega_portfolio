@@ -2,13 +2,30 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 60px; /* Lo más estrecho posible */
-  height: 80vh; /* Altura completa de la pantalla */
+  width: 60px; /* Navbar estrecho por defecto */
+  height: 100vh; /* Altura completa */
+  background-color: #333;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1000; /* Siempre visible encima del contenido */
+  z-index: 1000;
+  transition: all 0.3s ease; /* Para una transición suave */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    width: 50px; /* Aún más estrecho en móviles */
+  }
+
+  .nav-link {
+    padding: 0.5rem 0; /* Ajustar el padding en móviles */
+  }
+
+  .nav-text {
+    display: none; /* Ocultar el texto en móviles */
+  }
 }
 
 .nav-list {
@@ -33,6 +50,7 @@
   text-decoration: none;
   width: 100%;
   padding: 1rem 0;
+  transition: width 0.3s ease;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -47,20 +65,10 @@
   background-color: rgba(255, 215, 0, 0.2);
 }
 
-.nav-link:hover {
-  width: 180px; /* Expande la barra al hacer hover */
-}
-
 .nav-text {
   font-size: 0.75rem;
   margin-top: 0.1rem;
   color: #F9B17A;
-  opacity: 1; /* El texto será invisible inicialmente */
-
-}
-
-.nav-link:hover .nav-text {
-  opacity: 1; /* Muestra el texto cuando se hace hover */
 }
 
 mat-icon {
@@ -69,4 +77,3 @@ mat-icon {
   font-size: 24px;
   color: #F9B17A;
 }
-
