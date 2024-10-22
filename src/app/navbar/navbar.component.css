@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 60px; /* Navbar estrecho por defecto */
+  width: 70px; /* Navbar estrecho por defecto */
   height: 100vh; /* Altura completa */
 
   padding: 0;
