@@ -13,6 +13,7 @@ export class HomeComponent {
 
 
     emailAddress = 'sara.a.ortega@gmail.com';  
+    emailDemo = 'demo@demo.com'
   }
 
 

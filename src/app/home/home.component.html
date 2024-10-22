@@ -1,32 +1,32 @@
 <div class="relative min-h-screen bg-fixed bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0
  before:bg-black before:opacity-30" style="background-image: url('../../assets/fondo_.jpg')">
   <!-- Contenido principal con z-index para asegurar que esté sobre el overlay -->
-  <div class="relative z-10 flex min-h-screen">
-
-      <!-- Contenido del navbar -->
-      <app-navbar></app-navbar>
-   
+  <div class="relative flex min-h-screen">
+    <!-- Contenido del navbar -->
+    <app-navbar></app-navbar>
     <!-- Contenido principal -->
     <main class="flex-1 overflow-x-auto py-14 px-9 ml-6 sm:ml-0">
       <!-- Home Section -->
       <section id="home" class="text-center">
-        <p class="font-bold font-mono text-white mb-6">Hola👋🏼, soy</p>
-        <p class="font-raleway text-6xl md:text-8xl lg:text-8xl text-white mb-2">
+        <p class="font-bold font-mono text-white mb-5">Hola👋🏼, soy</p>
+        <p
+          class="font-raleway text-6xl md:text-8xl lg:text-8xl bg-gradient-to-r from-gold via-purple-500 to-blue-500 text-transparent bg-clip-text animate-gradient mb-8 pb-2">
           Sara Ortega.
         </p>
-
         <!-- Contenedor para centrar el texto -->
         <div class="typing-container -mt-10">
           <p class="font-mono text-white text-sm lg:text-xl text-center typing m-2">
-            Desarrolladora Frontend.
+            Frontend Web Developer.
           </p>
         </div>
 
         <div class="mt-5 space-x-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
-          <button
-            class="font-raleway bg-gold hover:bg-light text-dark font-bold py-2 px-6 rounded w-full sm:w-auto mb-4 sm:mb-0">
-            Descargar CV
-          </button>
+          <a href="../../assets/Sara_Ortega.pdf" target="_blank" rel="noopener noreferrer">
+            <button
+              class="font-raleway bg-gold hover:bg-light text-dark font-bold py-2 px-6 rounded w-full sm:w-auto mb-4 sm:mb-0">
+              Descargar CV
+            </button>
+          </a>
           <a href="#contact"
             class="font-raleway bg-gold hover:bg-light text-dark font-bold py-2 px-6 rounded w-full sm:w-auto nav-link"
             routerLinkActive="active">
@@ -45,12 +45,17 @@
 
                 <span class="hover-underline-animation">Sobre mí</span>
               </h5>
-              <p class="text-base text-white leading-loose sm:text-left mb-0">
-                Aquí puedes escribir una breve descripción sobre ti, tu experiencia y tus objetivos profesionales.
-                Puedes describir tus habilidades, logros, o qué te apasiona en tu carrera como desarrollador(a).
-                Puedes describir tus habilidades, logros, o qué te apasiona en tu carrera como desarrollador(a).
-                Puedes describir tus habilidades, logros, o qué te apasiona en tu carrera como desarrollador(a).
-              </p>
+              <p class="text-base text-white leading-6 sm:text-left mb-0">
+                Soy desarrolladora web frontend motivada por crear aplicaciones interactivas
+                que ofrezcan al usuario una experiencia eficiente y satisfactoria. Mi trayectoria en producción
+                audiovisual y comunicación
+                me ha dotado de valiosas soft skills como el trabajo en equipo
+                y la gestión del tiempo.
+
+                <br />Actualmente, me encuentro en un proceso de reskilling profesional hacia el desarrollo web,
+                buscando oportunidades y proyectos desafiantes que me permitan crecer y aplicar mis conocimientos.
+                Me destaco por mi adaptabilidad, autonomía en el aprendizaje y motivación constante,
+                siempre comprometida con el éxito de cada proyecto en el que participo.
             </div>
 
             <!-- Columna derecha con imagen reducida -->
@@ -166,7 +171,7 @@
               <div class="space-y-6 px-5">
                 <!-- Tecnologías usadas -->
                 <div
-                  class="flex flex-wrap gap-2 md:gap-3 mt-4 lg:mb-5 lg:absolute lg:bottom-28 lg:translate-x-[10px] sm:items-center">
+                  class="flex flex-wrap gap-2 md:gap-3 mt-4 lg:mb-5 lg:absolute lg:bottom-40 lg:translate-x-[10px] sm:items-center">
                   <span
                     class="px-2 py-1 md:px-2 md:py-2 bg-dark/50 text-light rounded-lg text-xs md:text-sm">Angular</span>
                   <span
@@ -180,21 +185,33 @@
                 </div>
 
                 <!-- Card con descripción -->
-                <div class="bg-medium rounded-2xl p-4 lg:p-3 text-sm shadow-2xl lg:absolute lg:bottom-1 lg:left-96 lg:translate-x-[105px] lg:w-[600px] flex items-center justify-between">
-                  <p class="text-white text-sm leading-loose flex-grow">
-                    Permite ver y comprar los comics de Marvel, también permite ver los detalles de cada comic y los
-                    personajes que aparecen en cada uno de ellos, además de ver el detalle de cada personaje y los
-                    comics en los que aparece.
+                <div
+                  class="bg-medium rounded-2xl p-4 lg:p-3 text-sm shadow-2xl lg:absolute lg:bottom-1 lg:translate-x-[-60px] lg:w-[650px] flex items-center justify-between">
+                  <p class="text-white text-sm leading-1 flex-grow">
+                    <span class="font-bold">AGENCIA TALENT LAB</span> <!-- Título en negrita -->
+                    <br> <!-- Salto de línea -->
+                    Plataforma fullstack que conecta actores con proyectos. Con potentes filtros,
+                    permite encontrar rápidamente a los actores ideales para cada producción. Talent Lab facilita la
+                    gestión de actores y personajes por parte de las productoras audiovisuales, optimizando la búsqueda
+                    y selección de talento de manera eficiente.
+
+                    <span class="flex space-x-2 mt-2"> <!-- Agregamos espacio entre los elementos -->
+                      <span>Acceso rápido a la demo:</span>
+                      <span>Usuario: {{emailDemo}}</span>
+                      <span>Contraseña: 123456</span>
+                    </span>
                   </p>
                   <a href="https://github.com/SaraAOrtega/TalentLab_FRONT"
-                     class="text-dark hover:text-light transition-colors p-2 rounded-full ml-4" target="_blank"
-                     rel="noopener noreferrer">
+                    class="text-gold hover:text-light transition-colors p-2 rounded-full ml-4" target="_blank"
+                    rel="noopener noreferrer">
                     <svg class="w-10 h-10 md:w-8 md:h-10" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
                   </a>
                 </div>
-                
+
+
               </div>
             </div>
           </div>
