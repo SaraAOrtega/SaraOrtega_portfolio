@@ -11,4 +11,8 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
 
-}
+
+    emailAddress = 'sara.a.ortega@gmail.com';  
+  }
+
+

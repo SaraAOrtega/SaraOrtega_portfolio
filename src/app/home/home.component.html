@@ -10,216 +10,247 @@
 
     <!-- Contenido principal -->
     <main class="flex-1 overflow-x-auto p-12">
-        <!-- Home Section -->
-        <section id="home" class="rounded-xl p-8 text-center">
-          <p class="font-bold font-mono text-white mb-6">Hola👋🏼, soy</p>
-          <p class="font-raleway text-8xl md:text-8xl lg:text-8xl text-white mb-0">
-            Sara Ortega.
+      <!-- Home Section -->
+      <section id="home" class="text-center">
+        <p class="font-bold font-mono text-white mb-6">Hola👋🏼, soy</p>
+        <p class="font-raleway text-6xl md:text-8xl lg:text-8xl text-white mb-2">
+          Sara Ortega.
+        </p>
+
+        <!-- Contenedor para centrar el texto -->
+        <div class="typing-container -mt-10">
+          <p class="font-mono text-white text-xl text-center typing m-2">
+            Desarrolladora Frontend.
           </p>
-          
-          <!-- Contenedor para centrar el texto -->
-          <div class="typing-container -mt-10">
-            <p class="font-mono text-white text-lg text-center typing m-0"> <!-- Cambiado a mt-0 -->
-              Desarrolladora Frontend.
-            </p>
-          </div>
-          
-          <div class="mt-5 space-x-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
-            <button
-              class="font-raleway bg-gold hover:bg-light text-dark font-bold py-2 px-6 rounded w-full sm:w-auto mb-4 sm:mb-0">
-              Descargar CV
-            </button>
-            <button class="font-raleway bg-gold hover:bg-light text-dark font-bold py-2 px-6 rounded w-full sm:w-auto">
-              Contáctame
-            </button>
-          </div>
+        </div>
 
-        </section>
+        <div class="mt-5 space-x-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
+          <button
+            class="font-raleway bg-gold hover:bg-light text-dark font-bold py-2 px-6 rounded w-full sm:w-auto mb-4 sm:mb-0">
+            Descargar CV
+          </button>
+          <a href="#contact"
+            class="font-raleway bg-gold hover:bg-light text-dark font-bold py-2 px-6 rounded w-full sm:w-auto nav-link"
+            routerLinkActive="active">
+            Contáctame
+          </a>
+        </div>
+      </section>
 
-        <!-- About Section -->
-        <section id="about" class="px-12">
-          <div class="max-w-6xl mx-auto ml-9">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-24">
-              <!-- Columna izquierda con título y texto -->
-              <div class="w-full lg:w-3/5">
-                <h5 class="font-semibold mb-3 text-white text-left">
-                  <span class="hover-underline-animation">Sobre mí</span>
-                </h5>
-                <p class="text-base text-white leading-relaxed">
-                  Aquí puedes escribir una breve descripción sobre ti, tu experiencia y tus objetivos profesionales.
-                  Puedes describir tus habilidades, logros, o qué te apasiona en tu carrera como desarrollador(a).
-                  Puedes describir tus habilidades, logros, o qué te apasiona en tu carrera como desarrollador(a).
-                  Puedes describir tus habilidades, logros, o qué te apasiona en tu carrera como desarrollador(a).
-                </p>
-              </div>
+      <!-- About Section -->
+      <section id="about" class="mb-16 mt-6 w-full">
+        <div class="max-w-6xl mx-auto px-1">
+          <div class="flex flex-col lg:flex-row items-center justify-between gap-24">
+            <!-- Columna izquierda con título y texto -->
+            <div class="w-full lg:w-3/5">
+              <h5 class="font-semibold mb-3 text-white text-center lg:text-left">
 
-              <!-- Columna derecha con imagen reducida -->
-              <div class="w-full lg:w-2/5 mt-0">
-                <div class="max-w-[250px] lg:max-w-[300px]">
-                  <img src="../../assets/foto_ok.png" alt="Mi foto" class="rounded-sm w-full h-auto object-cover">
-                </div>
+                <span class="hover-underline-animation">Sobre mí</span>
+              </h5>
+              <p class="text-base text-white leading-loose sm:text-left mb-0">
+                Aquí puedes escribir una breve descripción sobre ti, tu experiencia y tus objetivos profesionales.
+                Puedes describir tus habilidades, logros, o qué te apasiona en tu carrera como desarrollador(a).
+                Puedes describir tus habilidades, logros, o qué te apasiona en tu carrera como desarrollador(a).
+                Puedes describir tus habilidades, logros, o qué te apasiona en tu carrera como desarrollador(a).
+              </p>
+            </div>
+
+            <!-- Columna derecha con imagen reducida -->
+            <div class="w-full lg:w-2/5 mt-1 lg:mt-0 flex justify-center">
+              <div class="max-w-[250px] lg:max-w-[300px] w-full">
+                <img src="../../assets/foto_ok.png" alt="Mi foto" class="rounded-sm w-full h-auto object-cover">
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <section id="projects" class="mb-16 mt-6 w-full">
+        <div class="max-w-6xl mx-auto px-1">
+          <div class="flex flex-col lg:flex-row items-center justify-between gap-24">
+            <h5 class="font-semibold mb-3 text-white text-center lg:text-left">
+              <span class="hover-underline-animation">Tech Skills</span>
+            </h5>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 sm:flex sm:justify-center sm:flex-wrap sm:gap-8">
 
-
-        <section id="tech-skills" class="mb-16 ml-9 px-12 mt-9">
-          <h5 class="font-semibold mb-6 text-white hover-underline-animation">Tech Skills</h5>
-          <div class="grid grid-cols-1 md:grid-cols-3">
-
-            <!-- Frontend Skills -->
-            <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div class="flex flex-col items-center mb-2">
-                <img src="../../assets/frontend.png" alt="Frontend icon" class="h-32 w-32 mb-2 object-contain">
-                <h5 class="text-xl font-semibold text-light">Frontend</h5>
-              </div>
-              <div class="flex flex-wrap gap-2 justify-center">
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">HTML5</span>
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">CSS3</span>
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">JavaScript</span>
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Angular</span>
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Tailwind</span>
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Bootstrap</span>
-              </div>
+          <!-- Frontend Skills -->
+          <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 sm:w-full sm:max-w-xs">
+            <div class="flex flex-col items-center mb-2">
+              <img src="../../assets/frontend.png" alt="Frontend icon" class="h-32 w-32 mb-2 object-contain">
+              <h5 class="text-xl font-semibold text-light">Frontend</h5>
             </div>
-
-            <!-- Backend Skills -->
-            <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div class="flex flex-col items-center mb-4">
-                <img src="../../assets/data.png" alt="Frontend icon" class="h-32 w-32 mb-3 object-contain">
-                <h5 class="font-semibold text-light">Backend</h5>
-              </div>
-              <div class="flex flex-wrap gap-2 justify-center">
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Node.js</span>
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Express</span>
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">MySQL</span>
-             
-              </div>
+            <div class="flex flex-wrap gap-2 justify-center">
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">HTML5</span>
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">CSS3</span>
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">JavaScript</span>
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Angular</span>
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Tailwind</span>
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Bootstrap</span>
             </div>
+          </div>
 
-            <!-- Tools -->
-            <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div class="flex flex-col items-center mb-4">
-                <img src="../../assets/herramientas.png" alt="Frontend icon" class="h-28 w-28 mb-6 mt-2 object-contain">
-                <h5 class="font-semibold text-light">Herramientas</h5>
-              </div>
-              <div class="flex flex-wrap gap-2 justify-center">
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Git</span>
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">GitHub</span>
-                <span 
+          <!-- Backend Skills -->
+          <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 sm:w-full sm:max-w-xs">
+            <div class="flex flex-col items-center mb-4">
+              <img src="../../assets/data.png" alt="Frontend icon" class="h-32 w-32 mb-3 object-contain">
+              <h5 class="font-semibold text-light">Backend</h5>
+            </div>
+            <div class="flex flex-wrap gap-2 justify-center">
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Node.js</span>
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Express</span>
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">MySQL</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 sm:w-full sm:max-w-xs">
+            <div class="flex flex-col items-center mb-4">
+              <img src="../../assets/herramientas.png" alt="Frontend icon" class="h-28 w-28 mb-6 mt-2 object-contain">
+              <h5 class="font-semibold text-light">Herramientas</h5>
+            </div>
+            <div class="flex flex-wrap gap-2 justify-center">
+              <span class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Git</span>
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">GitHub</span>
+              <span
                 class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">VSCode</span>
-                <span
-                  class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Postman</span>
-              </div>
+              <span
+                class="px-3 py-1 bg-slate-200 rounded-full text-dark text-sm font-raleway hover:bg-light">Postman</span>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="projects" class="mb-16 ml-9 px-12 mt-9">
-          <h5 class="font-semibold mb-3 text-white text-left">
-            <span class="hover-underline-animation">Proyecto</span>
-          </h5>
-        
-          <!-- Contenedor de proyectos -->
-          <div class="space-y-24">
-            <div class="relative">
-              <!-- Título del proyecto -->
-              <p class="text-white mb-3 text-center pr-40">Agencia TalentLab</p>
-        
-              <!-- Grid para contenido y screenshot -->
-              <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-end relative">
-                
-                <!-- Screenshot del proyecto -->
-                <div class="relative group">
-                  <div class="overflow-hidden rounded-2xl shadow-2xl">
-                    <img 
-                      src="../../assets/tl.png" 
-                      alt="TalentLab" 
-                      class="w-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-                    >
-                  </div>
-        
-                  <!-- Overlay con efecto hover -->
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
-                    <div class="absolute bottom-0 left-0 right-0 p-6">
-                      <a href="#" class="inline-block px-6 py-3 bg-gold text-dark font-semibold rounded-lg hover:bg-light transition-colors">
-                        Ver proyecto
-                      </a>
-                    </div>
-                  </div>
+      <section id="projects" class="mb-16 mt-6 w-full">
+        <div class="max-w-6xl mx-auto px-1">
+          <div class="flex flex-col lg:flex-row items-center justify-between gap-24">
+            <h5 class="font-semibold mb-3 text-white text-center lg:text-left">
+              <span class="hover-underline-animation">Proyecto</span>
+            </h5>
+          </div>
+        </div>
+        <!-- Contenedor de proyectos -->
+        <div class="px-10 mt-3">
+          <div class="relative">
+            <!-- Grid para contenido y screenshot -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 items-center">
+              <!-- Screenshot del proyecto con el icono de GitHub -->
+              <div class="relative group">
+                <!-- Enlaces de GitHub reposicionados -->
+
+                <div class="overflow-hidden rounded-2xl shadow-2xl">
+                  <img src="../../assets/tl.png" alt="TalentLab"
+                    class="w-full object-cover transform group-hover:scale-105 transition-transform duration-300">
                 </div>
-        
-                <!-- Descripción y tecnologías -->
-                <div class="space-y-6">
-                  <!-- Tecnologías usadas -->
-                  <div class="flex flex-wrap gap-3 absolute bottom-28 left-96 translate-x-[200px] px-1 ">
-                    <span class="px-2 py-2 bg-dark/50 text-light rounded-lg text-sm">Angular</span>
-                    <span class="px-2 py-2 bg-dark/50 text-light rounded-lg text-sm">Bootstrap</span>
-                    <span class="px-2 py-2 bg-dark/50 text-light rounded-lg text-sm">Typescript</span>
-                    <span class="px-2 py-2 bg-dark/50 text-light rounded-lg text-sm">Node Js</span>
-                    <span class="px-2 py-2 bg-dark/50 text-light rounded-lg text-sm">Mysql</span>
-                  </div>
-        
-                  <!-- Enlaces (posicionados arriba del contenedor) -->
-                  <div class="flex gap-4 mt-4 z-20 absolute top-[-60px] left-0 right-0 justify-center">
-                    <a href="https://github.com/SaraAOrtega/TalentLab_FRONT" class="text-white hover:text-gold transition-colors" target="_blank" rel="noopener noreferrer">
-                      <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                      </svg>
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <div class="absolute bottom-0 left-0 right-0 p-4 md:p-2">
+                    <a href="https://talent-lab-one.vercel.app/home"
+                      class="inline-block px-4 py-2 md:px-6 md:py-3 bg-gold text-dark font-semibold rounded-lg hover:bg-light transition-colors"
+                      target="_blank" rel="noopener noreferrer">
+                      Ver proyecto
                     </a>
-                    <a href="https://talent-lab-one.vercel.app/home" class="text-white hover:text-gold transition-colors" target="_blank" rel="noopener noreferrer">
-                      <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 19h-1v-8h1v8zm-1-12.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 12.5h-1v-4.5c0-1.105-.895-2-2-2s-2 .895-2 2v4.5h-1v-8h1v1.516c.589-.705 1.339-1.516 2.5-1.516 1.932 0 3.5 1.567 3.5 3.5v4.5z"/>
-                      </svg>
-                    </a>
-                  </div>
-        
-                  <!-- Card con descripción -->
-                  <div class="absolute bottom-1 left-96 translate-x-[100px] w-[600px] bg-medium rounded-2xl p-3 text-sm shadow-2xl z-20">
-                    <p class="text-white text-sm leading-relaxed">
-                      Permite ver y comprar los comics de Marvel, también permite ver los detalles de cada comic y los personajes que aparecen en cada uno de ellos, además de ver el detalle de cada personaje y los comics en los que aparece.
-                    </p>  
                   </div>
                 </div>
               </div>
+
+              <!-- Descripción y tecnologías -->
+              <div class="space-y-6 px-5">
+                <!-- Tecnologías usadas -->
+                <div
+                  class="flex flex-wrap gap-2 md:gap-3 mt-4 lg:mb-5 lg:absolute lg:bottom-28 lg:translate-x-[10px] sm:items-center">
+                  <span
+                    class="px-2 py-1 md:px-2 md:py-2 bg-dark/50 text-light rounded-lg text-xs md:text-sm">Angular</span>
+                  <span
+                    class="px-2 py-1 md:px-2 md:py-2 bg-dark/50 text-light rounded-lg text-xs md:text-sm">Bootstrap</span>
+                  <span
+                    class="px-2 py-1 md:px-2 md:py-2 bg-dark/50 text-light rounded-lg text-xs md:text-sm">Typescript</span>
+                  <span class="px-2 py-1 md:px-2 md:py-2 bg-dark/50 text-light rounded-lg text-xs md:text-sm">Node
+                    Js</span>
+                  <span
+                    class="px-2 py-1 md:px-2 md:py-2 bg-dark/50 text-light rounded-lg text-xs md:text-sm">Mysql</span>
+                </div>
+
+                <!-- Card con descripción -->
+                <div class="bg-medium rounded-2xl p-4 lg:p-3 text-sm shadow-2xl lg:absolute lg:bottom-1 lg:left-96 lg:translate-x-[105px] lg:w-[600px] flex items-center justify-between">
+                  <p class="text-white text-sm leading-loose flex-grow">
+                    Permite ver y comprar los comics de Marvel, también permite ver los detalles de cada comic y los
+                    personajes que aparecen en cada uno de ellos, además de ver el detalle de cada personaje y los
+                    comics en los que aparece.
+                  </p>
+                  <a href="https://github.com/SaraAOrtega/TalentLab_FRONT"
+                     class="text-dark hover:text-light transition-colors p-2 rounded-full ml-4" target="_blank"
+                     rel="noopener noreferrer">
+                    <svg class="w-10 h-10 md:w-8 md:h-10" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                  </a>
+                </div>
+                
+              </div>
             </div>
           </div>
-        </section>
-        
-        
- 
-        
-        <!-- Contact Section -->
-        <section id="contact" class="bg-white rounded-lg shadow p-8">
-          <h2 class="text-3xl font-semibold mb-6 text-slate-800">Contacto</h2>
-          <form class="space-y-4">
-            <div>
-              <input type="text" placeholder="Nombre" required
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
-            </div>
-            <div>
-              <input type="email" placeholder="Email" required
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
-            </div>
-            <div>
-              <textarea placeholder="Mensaje" required
-                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 h-32"></textarea>
-            </div>
-            <button type="submit"
-              class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">Enviar</button>
-          </form>
-        </section>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="mb-16 mt-6 w-full">
+        <div class="max-w-6xl mx-auto px-1">
+          <div class="flex flex-col lg:flex-row items-center justify-between gap-24">
+            <!-- Título con animación hover consistente -->
+            <h5 class="font-semibold mb-3 text-white text-center lg:text-left">
+              <span class="hover-underline-animation">Contacto</span>
+            </h5>
+          </div>
+        </div>
+
+        <!-- Contenedor de iconos con efecto de entrada -->
+        <div class="flex flex-wrap gap-8 px-12">
+          <!-- GitHub -->
+          <a href="https://github.com/SaraAOrtega"
+            class="flex items-center gap-3 text-white hover:text-gold transition-all transform hover:scale-105 p-3 animate-fade-up"
+            style="animation-delay: 200ms;" target="_blank" rel="noopener noreferrer">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            <span class="text-lg font-medium">GitHub</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/sara-ortega-104008140/"
+            class="flex items-center gap-3 text-white hover:text-gold transition-all transform hover:scale-105 p-3 animate-fade-up"
+            style="animation-delay: 400ms;" target="_blank" rel="noopener noreferrer">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 19h-1v-8h1v8zm-1-12.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 12.5h-1v-4.5c0-1.105-.895-2-2-2s-2 .895-2 2v4.5h-1v-8h1v1.516c.589-.705 1.339-1.516 2.5-1.516 1.932 0 3.5 1.567 3.5 3.5v4.5z" />
+            </svg>
+            <span class="text-lg font-medium">LinkedIn</span>
+          </a>
+
+          <!-- Email -->
+          <a [href]="'mailto:' + emailAddress"
+            class="flex items-center gap-3 text-white hover:text-gold transition-all transform hover:scale-105 p-3 animate-fade-up"
+            style="animation-delay: 600ms;" target="_blank" rel="noopener noreferrer">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span class="text-lg font-medium">{{emailAddress}}</span>
+          </a>
+        </div>
+
+
+
+      </section>
     </main>
   </div>
